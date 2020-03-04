@@ -25,7 +25,7 @@ SECRET_KEY = '0d)dept-zj77x0@_ldscqkgu53x+1f02&3y&du2jb$a3ol%2+i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
 
 
 # Application definition
