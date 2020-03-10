@@ -1,6 +1,7 @@
 body {
-  background: #fafafa;
-  color: #333333;
+  background: url("/media/img/BlogProjectBackground1.jpg") no-repeat center center;
+  min-height: 100%;
+  background-size: cover;
   margin-top: 5rem;
 }
 
@@ -13,7 +14,7 @@ ul {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #006736;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -81,4 +82,14 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+/*--------------------------------------------Map*/
+
+div#map {
+    min-height: 480px;
+}
+
+iframe#calendar {
+    min-height: 480px;
 }
