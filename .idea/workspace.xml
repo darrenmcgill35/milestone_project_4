@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/static/blog/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/milestone_project_4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/milestone_project_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/blog/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/milestone_project_4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/milestone_project_4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +69,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="milestone_project_4.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -108,7 +111,11 @@
       <workItem from="1583850861540" duration="202000" />
       <workItem from="1583857233330" duration="1067000" />
       <workItem from="1583860308945" duration="620000" />
-      <workItem from="1583863325591" duration="5227000" />
+      <workItem from="1583863325591" duration="5463000" />
+      <workItem from="1583917711512" duration="255000" />
+      <workItem from="1583948193414" duration="3325000" />
+      <workItem from="1583951560660" duration="418000" />
+      <workItem from="1583952008323" duration="1950000" />
     </task>
     <servers />
   </component>
@@ -128,13 +135,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582376942015" />
+    <state width="1921" height="133" key="GridCell.Tab.0.bottom" timestamp="1583951978821">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="133" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583951978821" />
+    <state width="1921" height="133" key="GridCell.Tab.0.center" timestamp="1583951978820">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="133" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583951978820" />
+    <state width="1921" height="133" key="GridCell.Tab.0.left" timestamp="1583951978820">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="133" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583951978820" />
+    <state width="1921" height="133" key="GridCell.Tab.0.right" timestamp="1583951978820">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="133" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583951978820" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1582373413403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582373413403" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583866390346">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1852" y="70" width="945" height="969" key="search.everywhere.popup" timestamp="1583949827156">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
+    <state x="1852" y="70" width="945" height="969" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1583949827156" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583866390346" />
   </component>
 </project>
