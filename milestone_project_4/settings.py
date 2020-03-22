@@ -33,9 +33,7 @@ SECRET_KEY = '0d)dept-zj77x0@_ldscqkgu53x+1f02&3y&du2jb$a3ol%2+i'
 DEBUG = True
 
 ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
-
-#
-
+# ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -133,10 +131,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'milestone_project_4/static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
