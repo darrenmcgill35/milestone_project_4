@@ -87,7 +87,7 @@ a.article-title:hover {
 /*--------------------------------------------Map*/
 
 div#map {
-    min-height: 480px;
+    min-height: 400px;
 }
 
 iframe#calendar {
