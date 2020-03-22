@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/milestone_project_4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/milestone_project_4/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +111,8 @@
       <workItem from="1583948193414" duration="3325000" />
       <workItem from="1583951560660" duration="418000" />
       <workItem from="1583952008323" duration="4742000" />
-      <workItem from="1584003227823" duration="151000" />
+      <workItem from="1584003227823" duration="1708000" />
+      <workItem from="1584869568413" duration="1805000" />
     </task>
     <servers />
   </component>
