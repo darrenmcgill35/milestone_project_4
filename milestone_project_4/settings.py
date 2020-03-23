@@ -38,9 +38,6 @@ ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'blog.apps.BlogConfig',
-    'users.apps.UsersConfig',
-    'shop.apps.ShopConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop',
+    'blog',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'milestone_project_4.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-
 }
+
 # 'ENGINE': 'django.db.backends.sqlite3',
 # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
