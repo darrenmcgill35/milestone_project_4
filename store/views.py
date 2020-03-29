@@ -4,5 +4,5 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def shop(request):
-    return render(request, 'shop/shop.html')
+    return render(request, 'store/store.html')
 
