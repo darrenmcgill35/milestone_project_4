@@ -37,6 +37,15 @@ ul {
   margin-bottom: 20px;
 }
 
+.featured-items {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .article-title {
   color: #444444;
 }
@@ -90,6 +99,6 @@ div#map {
     min-height: 400px;
 }
 
-iframe#calendar {
-    min-height: 480px;
-}
+/*iframe#calendar {*/
+/*    min-height: 480px;*/
+/*}*/

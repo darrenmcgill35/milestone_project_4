@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import django_heroku
 import dj_database_url
+import env
 
 db_user = os.environ.get('DB_USER')
 db_password = os.environ.get('DB_PASSWORD')
@@ -33,8 +34,8 @@ SECRET_KEY = '0d)dept-zj77x0@_ldscqkgu53x+1f02&3y&du2jb$a3ol%2+i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
     'store',
     'blog',
     'users',
+    'checkout',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.contexts.cart_contents',
             ],
         },
     },
@@ -85,20 +89,20 @@ WSGI_APPLICATION = 'milestone_project_4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'project',
-#         'USER': 'postgres',
-#         'PASSWORD': 'Limegrove35',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'project',
+         'USER': 'postgres',
+         'PASSWORD': 'Limegrove35',
+         'HOST': 'localhost',
+         'PORT': '5432',
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+# }
 
 # 'ENGINE': 'django.db.backends.sqlite3',
 # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
@@ -148,6 +152,8 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
