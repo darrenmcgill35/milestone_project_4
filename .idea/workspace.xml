@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/milestone_project_4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
       <workItem from="1584869568413" duration="15570000" />
       <workItem from="1584993002139" duration="4200000" />
       <workItem from="1585213222996" duration="1646000" />
-      <workItem from="1585471950584" duration="1503000" />
+      <workItem from="1585471950584" duration="1675000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,6 @@ from django.contrib.auth.decorators import login_required
 
 
 @login_required
-def shop(request):
+def store(request):
     return render(request, 'store/store.html')
 
