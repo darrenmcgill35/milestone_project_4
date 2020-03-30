@@ -32,14 +32,17 @@
         <div class="col-xs-12">
             <span class="text-uppercase font-weight-bold">featured items</span>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <a title="Mycro New Hurling Helmets" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image1.jpg" alt="helmet">
-                    <span>Mycro New Hurling Helmets</span>
-                    <span>€35.99</span>
-                </a>
-{#                <form method="post" action="{% url 'add_to_cart' product.id %}">#}
+        <div class="row row-flex">
+    {% for store in stores %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="store" style="background-image: url('{{ MEDIA_URL }}{{ store.image }}')"></div>
+
+                <h3>{{ store.name }}</h3>
+                <p class="product-description">{{ store.description }}</p>
+                <p>{{ store.price }}</p>
+
+                <form method="post" action="{% url 'add_to_cart' store.id %}">
                     {% csrf_token %}
                     <div class="input-group">
                         <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
@@ -47,73 +50,93 @@
                             <button class="btn btn-success" type="submit">Add</button>
                         </span>
                     </div>
-{#                </form>#}
+                </form>
             </div>
-            <div class="col-xs-12 col-sm-6">
-                <a title="Gaelic Gloves" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image8.jpg" alt="gloves">
-                    <span>Gaelic Gloves</span>
-                    <span>€15.99</span>
-                </a>
+        </div>
+    {% endfor %}
+</div>
+{#        <div class="row">#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Mycro New Hurling Helmets" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image1.jpg" alt="helmet">#}
+{#                    <span>Mycro New Hurling Helmets</span>#}
+{#                    <span>€35.99</span>#}
+{#                </a>#}
 {#                <form method="post" action="{% url 'add_to_cart' product.id %}">#}
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
-                        </span>
-                    </div>
+{#                    {% csrf_token %}#}
+{#                    <div class="input-group">#}
+{#                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">#}
+{#                        <span class="input-group-btn">#}
+{#                            <button class="btn btn-success" type="submit">Add</button>#}
+{#                        </span>#}
+{#                    </div>#}
 {#                </form>#}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <a title="New Hurling Stick" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image3.jpg" alt="stick">
-                    <span>New Hurling Stick</span>
-                    <span>€22.99</span>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <a title="Hurling Wall Ball" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image4.jpg" alt="ball">
-                    <span>Hurling Wall Ball</span>
-                    <span>€6.99</span>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <a title="Master Rebounder Net" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image5.jpg" alt="net">
-                    <span>Rebounder Net</span>
-                    <span>€59.99</span>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <a title="Gaelic Football" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image6.jpg" alt="football">
-                    <span>Gaelic Football</span>
-                    <span>€15.99</span>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <a title="Hurlog" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image7.jpg" alt="hurlog">
-                    <span>Hurlog</span>
-                    <span>€15.99</span>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <a title="Football Boots" href="#">
-                <img class="img-thumbnail img-responsive" src="/media/img/store_image2.jpg" alt="boots">
-                    <span>Football Boots</span>
-                    <span>€84.99</span>
-                </a>
-            </div>
-        </div>
+{#            </div>#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Gaelic Gloves" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image8.jpg" alt="gloves">#}
+{#                    <span>Gaelic Gloves</span>#}
+{#                    <span>€15.99</span>#}
+{#                </a>#}
+{#                <form method="post" action="{% url 'add_to_cart' product.id %}">#}
+{#                    {% csrf_token %}#}
+{#                    <div class="input-group">#}
+{#                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">#}
+{#                        <span class="input-group-btn">#}
+{#                            <button class="btn btn-success" type="submit">Add</button>#}
+{#                        </span>#}
+{#                    </div>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="New Hurling Stick" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image3.jpg" alt="stick">#}
+{#                    <span>New Hurling Stick</span>#}
+{#                    <span>€22.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Hurling Wall Ball" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image4.jpg" alt="ball">#}
+{#                    <span>Hurling Wall Ball</span>#}
+{#                    <span>€6.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Master Rebounder Net" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image5.jpg" alt="net">#}
+{#                    <span>Rebounder Net</span>#}
+{#                    <span>€59.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Gaelic Football" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image6.jpg" alt="football">#}
+{#                    <span>Gaelic Football</span>#}
+{#                    <span>€15.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Hurlog" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image7.jpg" alt="hurlog">#}
+{#                    <span>Hurlog</span>#}
+{#                    <span>€15.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="col-xs-12 col-sm-6">#}
+{#                <a title="Football Boots" href="#">#}
+{#                <img class="img-thumbnail img-responsive" src="/media/img/store_image2.jpg" alt="boots">#}
+{#                    <span>Football Boots</span>#}
+{#                    <span>€84.99</span>#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
     </div>
 
 {% endblock content %}
