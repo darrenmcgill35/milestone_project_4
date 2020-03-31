@@ -13,7 +13,7 @@ def add_to_cart(request, id):
     cart[id] = cart.get(id, quantity)
 
     request.session['cart'] = cart
-    return redirect(reverse('cart/cart.html'))
+    return redirect(reverse('index'))
 
 
 def adjust_cart(request, id):
@@ -27,3 +27,4 @@ def adjust_cart(request, id):
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
+

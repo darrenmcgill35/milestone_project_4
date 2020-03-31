@@ -20,20 +20,18 @@ from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from cart.views import view_cart, add_to_cart
+from cart import views as view_cart_views
 from users import views as user_views
-from store.views import all_store
+from store import views as all_store_views
 from store import urls as url_stores
-from cart import views as cart_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
-    path('store/', all_store, name='store'),
-    path('cart/', view_cart, name='view_cart'),
-    path('add_to_cart/', add_to_cart, name='add_to_cart'),
+    path('store/', all_store_views.all_store, name='store'),
+    path('cart/', view_cart_views.view_cart, name='view_cart'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('password-reset/',
