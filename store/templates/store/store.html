@@ -33,26 +33,27 @@
             <span class="text-uppercase font-weight-bold">featured items</span>
         </div>
         <div class="row row-flex">
+
             {% for store in stores %}
                 <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
                     <div class="panel-body">
-                        <div class="store" style="background-image: url('{{ MEDIA_URL }}{{ store.image }}')"></div>
+                        <div class="store" style="background-image: url('{{ store.image.url }}')"></div>
 
                         <h3>{{ store.name }}</h3>
                         <p class="store-description">{{ store.description }}</p>
                         <p>{{ store.price }}</p>
 
-{#                        <form method="post" action="{% url 'add_to_cart' store.id %}">#}
-{#                            {% csrf_token %}#}
-{#                            <div class="input-group">#}
-{#                                <label>#}
-{#                                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">#}
-{#                                </label>#}
-{#                                <span class="input-group-btn">#}
-{#                                    <button class="btn btn-success" type="submit">Add</button>#}
-{#                                </span>#}
-{#                            </div>#}
-{#                        </form>#}
+                        <form method="post" action="{% url 'add_to_cart' store_id=store.id %}">
+                            {% csrf_token %}
+                            <div class="input-group">
+                                <label>
+                                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                                </label>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="submit">Add</button>
+                                </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             {% endfor %}

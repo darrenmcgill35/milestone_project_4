@@ -110,18 +110,18 @@ WSGI_APPLICATION = 'milestone_project_4.wsgi.application'
 # 'ENGINE': 'django.db.backends.sqlite3',
 # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
-if "DATABASE_URL" in os.environ:
-    DATABASES = {
-        "default": dj_database_url.parse(os.getenv("DATABASE_URL"))
-    }
-else:
-    print("Postgres URL not found, using sqlite3 instead")
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
+# if "DATABASE_URL" in os.environ:
+DATABASES = {
+    "default": dj_database_url.parse('postgres://abbticcpdvtogz:17acd68c4966cd520f3d9d02c89d881fe9252e72656cdfd0c28e2d696a0e4f85@ec2-3-234-169-147.compute-1.amazonaws.com:5432/d2g7mn5m38dgan')
+}
+# else:
+#     print("Postgres URL not found, using sqlite3 instead")
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.sqlite3",
+#             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+#         }
+#     }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
