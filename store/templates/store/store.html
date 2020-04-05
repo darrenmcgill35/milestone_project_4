@@ -42,17 +42,17 @@
                         <p class="store-description">{{ store.description }}</p>
                         <p>{{ store.price }}</p>
 
-                        <form method="post" action="{% url 'add_to_cart' store.id %}">
-                            {% csrf_token %}
-                            <div class="input-group">
-                                <label>
-                                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                                </label>
-                                <span class="input-group-btn">
-                                    <button class="btn btn-success" type="submit">Add</button>
-                                </span>
-                            </div>
-                        </form>
+{#                        <form method="post" action="{% url 'add_to_cart' store.id %}">#}
+{#                            {% csrf_token %}#}
+{#                            <div class="input-group">#}
+{#                                <label>#}
+{#                                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">#}
+{#                                </label>#}
+{#                                <span class="input-group-btn">#}
+{#                                    <button class="btn btn-success" type="submit">Add</button>#}
+{#                                </span>#}
+{#                            </div>#}
+{#                        </form>#}
                     </div>
                 </div>
             {% endfor %}

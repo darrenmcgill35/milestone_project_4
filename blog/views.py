@@ -57,5 +57,5 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return False
 
 
-def store(request):
-    return render(request, '../store/templates/store/store.html')
+# def store(request):
+#     return render(request, '../store/templates/store/store.html')

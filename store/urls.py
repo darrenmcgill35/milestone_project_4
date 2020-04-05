@@ -3,6 +3,6 @@ from .views import all_stores
 
 
 urlpatterns = [
-    path('store/', all_stores, name='stores'),
+    path('store/', all_stores, name='all_stores'),
 ]
 
