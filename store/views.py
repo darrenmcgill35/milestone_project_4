@@ -6,5 +6,5 @@ from .models import Store
 @login_required
 def all_stores(request):
     stores = Store.objects.all()
-    return render(request, 'store/store.html', {"stores": stores})
+    return render(request, 'store/store.html', {"store": stores})
 
