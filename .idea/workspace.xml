@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/milestone_project_4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +130,7 @@
       <workItem from="1585666099473" duration="1954000" />
       <workItem from="1585668118782" duration="2963000" />
       <workItem from="1585671393369" duration="918000" />
-      <workItem from="1586080833312" duration="11057000" />
+      <workItem from="1586080833312" duration="12877000" />
     </task>
     <servers />
   </component>
@@ -170,6 +174,10 @@
     </state>
     <state x="1560" y="7" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1586086376045" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582373413403" />
+    <state x="58" y="0" width="1178" height="738" key="dock-window-1" timestamp="1586094331401">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="58" y="0" width="1178" height="738" key="dock-window-1/0.0.1366.728/1366.0.1440.860@1366.0.1440.860" timestamp="1586094331401" />
     <state x="1852" y="70" width="945" height="969" key="search.everywhere.popup" timestamp="1583949827156">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>

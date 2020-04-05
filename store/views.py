@@ -4,7 +4,7 @@ from .models import Store
 
 
 @login_required
-def all_store(request):
-    store = Store.objects.all()
-    return render(request, 'store/store.html', {"store": store})
+def all_stores(request):
+    stores = Store.objects.all()
+    return render(request, 'store/store.html', {"stores": stores})
 
