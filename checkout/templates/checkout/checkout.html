@@ -1,4 +1,6 @@
 {% extends "blog/base.html" %}
+{% load bootstrap4 %}
+{% load bootstrap_tags %}
 {% load static from static %}
 {% block content %}
     {% block head_js %}
@@ -13,7 +15,7 @@
 
     <div class="content-section">
 
-                <div class="row row-flex">
+        <div class="row row-flex">
                 {% for item in cart_items %}
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
                         <div class="panel-body">
@@ -28,7 +30,7 @@
                         </div>
                     </div>
                 {% endfor %}
-            </div>
+        </div>
             <div class="row">
                 <p>Total</p>
                 <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
@@ -42,11 +44,11 @@
                 </div>
 
                 <div class="form-group col-md-6">
-                    {{ order_form  }}
+                    {{ order_form | as_bootstrap }}
                 </div>
 
                 <div class="form-group col-md-6">
-                    {{ payment_form }}
+                    {{ payment_form | as_bootstrap }}
                 </div>
 
                 {% csrf_token %}
