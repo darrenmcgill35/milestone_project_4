@@ -36,7 +36,8 @@
             {% for store in stores %}
                 <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
                     <div class="panel-body">
-                        <div class="store" style="background-image: url('{{ MEDIA_URL }}{{ store.image }}')"></div>
+{#                        <div class="store" style="background-image: url('{{ MEDIA_URL }}{{ store.image }}')"></div>#}
+                        <img class="store" src="{{ store.store.image.url }}">
 
                         <h3>{{ store.name }}</h3>
                         <p class="store-description">{{ store.description }}</p>

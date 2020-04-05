@@ -34,8 +34,8 @@ SECRET_KEY = '0d)dept-zj77x0@_ldscqkgu53x+1f02&3y&du2jb$a3ol%2+i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com']
+# ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -90,20 +90,20 @@ WSGI_APPLICATION = 'milestone_project_4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'project',
-         'USER': 'postgres',
-         'PASSWORD': 'Limegrove35',
-         'HOST': 'localhost',
-         'PORT': '5432',
-    }
-}
-
 # DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#      'default': {
+#          'ENGINE': 'django.db.backends.postgresql',
+#          'NAME': 'project',
+#          'USER': 'postgres',
+#          'PASSWORD': 'Limegrove35',
+#          'HOST': 'localhost',
+#          'PORT': '5432',
+#     }
 # }
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 # 'ENGINE': 'django.db.backends.sqlite3',
 # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
