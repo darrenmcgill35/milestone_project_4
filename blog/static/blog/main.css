@@ -135,6 +135,10 @@ a.article-title:hover {
     background-color: #c67605;
 }
 
+caption p {
+    word-wrap: break-word;
+}
+
 
 /*--------------------------------------------Map*/
 

@@ -22,19 +22,20 @@
                         <div class="panel-body">
                             <div class="store" style="background-image: url('{{ MEDIA_URL }}{{ item.store.image }}')"></div>
 
-                            <div class="caption">
+                            <div class="caption text-center">
                                 <h3>{{ item.store.name }}</h3>
                                 <p class="store-description">{{ item.store.description }}</p>
-                                <p>{{ item.quantity }}</p>
-                                <p>{{ item.store.price }}</p>
+                                <p class="input-group-text"> Qty -{{ item.quantity }}</p>
+                                <p><i class="fas fa-euro-sign"></i>{{ item.store.price }}</p>
                             </div>
                         </div>
                     </div>
                 {% endfor %}
         </div>
+
             <div class="row">
-                <p>Total</p>
-                <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+                    <p><strong>Total - </strong></p>
+                    <p><strong><span aria-hidden="true"><i class="fas fa-euro-sign"></i></span>{{ total }}</strong></p>
             </div>
 
             <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">

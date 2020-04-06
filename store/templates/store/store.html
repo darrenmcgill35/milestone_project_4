@@ -41,9 +41,9 @@
 
                         <h3>{{ store.name }}</h3>
                         <p class="store-description">{{ store.description }}</p>
-                        <p>{{ store.price }}</p>
+                        <p><i class="fas fa-euro-sign"></i>{{ store.price }}</p>
 
-                        <form method="post" action="{% url 'add_to_cart' store_id=store.id %}">
+                        <form method="post" action="{% url 'add_to_cart' store.id %}">
                             {% csrf_token %}
                             <div class="input-group">
                                 <label>
