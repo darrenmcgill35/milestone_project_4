@@ -35,3 +35,9 @@ def adjust_cart(request, store_id):
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
 
+
+def cart_remove(request, store_id):
+    cart = view_cart(request)
+    store = get_object_or_404(Store, id=store_id)
+    cart.remove(store)
+    return redirect(reverse('view_cart'))

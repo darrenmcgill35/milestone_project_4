@@ -15,14 +15,14 @@
                     <p><i class="fas fa-euro-sign"></i>{{ item.store.price }}</p>
                 </div>
 
-                    <form class="form-check" method="post" action="{% url 'adjust_cart' item.id %}">
+                    <form class="form-check" method="post" action="{% url 'adjust_cart' item.store.id %}">
                         {% csrf_token %}
                         <div class="form-group">
                             <label for="exampleInputAmount" class="sr-only">New Qty</label>
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Qty</span>
                                 <label>
-                                    <input name="quantity" type="number" min="0" max="999" class="form-control">
+                                    <input name="quantity" type="number" min="1" max="999" class="form-control">
                                 </label>
                                 <div class="input-group-text">{{item.quantity}}</div>
                             </div>
