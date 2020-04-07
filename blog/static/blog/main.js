@@ -26,8 +26,8 @@
 
  $(function() {
     $("#payment-form").submit(function() {
-        var form = this;
-        var card = {
+        const form = this;
+        const card = {
             number: $("#id_credit_card_number").val(),
             expMonth: $("#id_expiry_month").val(),
             expYear: $("#id_expiry_year").val(),
