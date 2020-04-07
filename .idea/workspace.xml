@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/users/migrations/0002_auto_20200407_1654.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0003_auto_20200407_1745.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/milestone_project_4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/signals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +132,9 @@
       <workItem from="1585668118782" duration="2963000" />
       <workItem from="1585671393369" duration="918000" />
       <workItem from="1586080833312" duration="34111000" />
-      <workItem from="1586184638643" duration="18897000" />
+      <workItem from="1586184638643" duration="19413000" />
+      <workItem from="1586246275245" duration="407000" />
+      <workItem from="1586272706108" duration="6952000" />
     </task>
     <servers />
   </component>
