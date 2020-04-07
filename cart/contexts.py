@@ -19,12 +19,3 @@ def cart_contents(request):
 
     return {'cart_items': cart_items, 'total': total, 'store_count': store_count}
 
-#
-# def remove(self, store):
-#
-#     store_id = str(store.id)
-#     if store_id in self.cart:
-#         self.cart[store_id]['quantity'] -= 1
-#         if self.cart[store_id]['quantity'] == 0:
-#             del self.cart[store_id]
-#         self.save()
