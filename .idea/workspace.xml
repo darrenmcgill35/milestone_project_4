@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/user-design-experience/skeleton-plane/wireframes.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/blog/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/milestone_project_4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/milestone_project_4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/img/default.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +56,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../djangoauthentication/djangoauthentication/urls.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/user-design-experience/skeleton-plane" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\darre\PycharmProjects\milestone_project_4\media\user-design-experience\skeleton-plane" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\darre\PycharmProjects\milestone_project_4\media\img" />
       <recent name="C:\Users\darre\PycharmProjects\milestone_project_4" />
       <recent name="C:\Users\darre\PycharmProjects\milestone_project_4\shop\templates\shop" />
     </key>
@@ -133,7 +136,8 @@
       <workItem from="1586184638643" duration="19413000" />
       <workItem from="1586246275245" duration="407000" />
       <workItem from="1586272706108" duration="8320000" />
-      <workItem from="1586281078545" duration="10389000" />
+      <workItem from="1586281078545" duration="11532000" />
+      <workItem from="1586336897664" duration="3413000" />
     </task>
     <servers />
   </component>
