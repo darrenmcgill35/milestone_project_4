@@ -72,7 +72,7 @@
                       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Latest Posts
                       </button>
-                      <div class="dropdown-menu">
+                      <div class="dropdown-menu blog-dropdown" >
                           {% for post in posts %}
                         <h6><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h6>
                           {% endfor %}
