@@ -1,5 +1,5 @@
 body {
-  background: url("/media/img/BlogProjectBackground1.jpg") no-repeat center center;
+  background: url('https://darrenproject4.s3-eu-west-1.amazonaws.com/media/img/BlogProjectBackground1.jpg') no-repeat center center;
   min-height: 100%;
   background-size: cover;
   margin-top: 5rem;

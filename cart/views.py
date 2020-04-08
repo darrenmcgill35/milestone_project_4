@@ -2,11 +2,13 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 
 
 # Create your views here.
+from blog.models import Post
 from store.models import Store
 
 
 def view_cart(request):
-    return render(request, "cart/cart.html")
+    posts = Post.objects.all()
+    return render(request, "cart/cart.html", {"posts": posts})
 
 
 def add_to_cart(request, store_id):

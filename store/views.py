@@ -8,12 +8,6 @@ from .models import Store
 @login_required
 def all_stores(request):
     stores = Store.objects.all()
+    posts = Post.objects.all()
 
-    return render(request, 'store/store.html', {"stores": stores})
-
-#
-# def home(request):
-#     context = {
-#         'posts': Post.objects.all()
-#     }
-#     return render(request, 'store/store.html', context)
+    return render(request, 'store/store.html', {"stores": stores, "posts": posts})
