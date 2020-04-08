@@ -7,39 +7,40 @@ The code can be found at: https://github.com/darrenmcgill35/milestone_project_4
 
 ## *What does it do and what need does it fulfil?*
 
-For my Third Milestone project I chose to design and code a Review site that is all 
-about using the CRUD operations. (Create, Read, Update, Delete)
+For my Fourth Milestone project I chose to design and code a Blog site with an Ecommerce App that is all 
+about creating and updating blog posts as well as viewing a store to purchase items.
 
-It also provides a Blog page to keep up to date with news and a merchandise page to view available sports wear. 
-
-Finally I also used the Google maps API to have a map showing the location of the Sports Store. 
+Finally I also used the Google maps API to have a map showing the location of a new museum at GAA Headquarters . 
 
 
 ## *Functionality of project.*
 
-The website is fully responsive. It is a 5 pages website with navigation buttons on the home page to 
-direct you to the Blog, Add & Review, Edit & Delete and Merchandise pages  
+The website is fully responsive. It is a multi-pages website with navigation buttons on the home page to 
+direct you to the Blog, Store, Cart, Profile, Login/Logout pages  
 
-The Blog page has a number of small articles with the option to read the full article via a Read More button.
+Each Blog post can be viewed by everyone but only can be edited by the creator.
 
-Thy Add & Review page displays a simple form which the user can fill in and simply chick the ADD REVIEW button. 
-This will redirect the user to the EDIT & DELETE Page. 
+By clicking on the post you will be redirected and be able to update ot delete thr post. 
 
-The Edit & Delete page allows the user to review all submissions. It also allows the user to Edit or Delete the 
-Submissions.
+Without registration you will still be able to view all posts but once you register you will be opened up the the 
+Store, and be able to create posts.
 
-The Merchandise page displays a number of projects with prices and a map with the store location. 
+The Store page displays a number of Items with prices and you can add to your cart. 
 
-All social icons are functional and direct the user to Two different pages. 
+The Cart page gives you your total and a checkout button.
+
+The Checkout page has a payment details form so you can purchase the items.
+
+All Announcements will be visible on all pages and the link will redirect you to the news article . 
 
 
 ## *UX*
 
-This website is designed and created for a wide varity of people.
-Responsive design was important as members of the public could add and review players 
+This website is designed and created for a wide variety of people.
+Responsive design was important as members of the public could add posts 
 when out and about at matches or at home on a tablet or desktop.  
 
-Click on the directory [user-design-experience](https://github.com/darrenmcgill35/milestone-project-3/tree/master/static/user-design-experience) for all the Planes, 
+Click on the directory [user-design-experience](https://github.com/darrenmcgill35/milestone_project_4/tree/master/media/user-design-experience) for all the Planes, 
 including User Stories, wireframes, mock-ups, diagrams that I created as part 
 of the design process.
 
@@ -49,15 +50,16 @@ of the design process.
 * HTML5 - markup language
 * CSS3 - used to style the page
 * Bootstrap 4 - for grid layout, navigation, responsive design and columns
-* Bootstrap Themes
-* Javascript - for adding the map to my site. 
-* Python
+* Javascript - for adding the map to my site and stripe payments. 
+* Python 3.7
+* Django
 * The Flask Framework
 * Jinja templates
 * GIT
 * GITHUB
 * Heroku - to host the website
-* MongoDB Atlas - for storing input data from my form. 
+* db.sqlite3
+* Postgres
 * Google Chrome developer tools
 * Pycharm IDE from JetBrains
 * Fontawesome
@@ -66,6 +68,9 @@ of the design process.
 * Google Maps API - Google Developers
 * Wireframe.cc
 * Paint.net
+* Travis CI
+* AWS S3 Buckets
+* Youtube tutorials on the new version of Python, Django storages, deploying to heroku & Travis CI.
 
 
 ## *Testing*
@@ -84,7 +89,7 @@ I validated my CSS with The W3C CSS Validation Service,
 
 Congratulations! No Error Found.
 
-I checked my app.py code using Python syntax checker
+I checked all app code using Python syntax checker
 
 Result - No syntax errors detected :)
 
@@ -127,10 +132,11 @@ All pages, images and forms were responsive with no issues.
 1. Similar to GITHUB using git add and commit I pushed to Heroku using 
 'git push heroku master'. 
 
-1. Later on in the project I was introduced to CICD - continuous integration and continuous delivery. Using
-my new Pycharm IDE I could just Click the green tick (Commit), write my commit message and click commit and push.
-After linking my Github repository to my Heroku app this one time push will update my code on Github and 
-deploy the app on Heroku. 
+1. All media files are stored in the cloud using AWS S3. Amazon S3 or Amazon Simple Storage Service is a 
+service offered by Amazon Web Services that provides object storage through a web service interface. 
+Amazon S3 uses the same scalable storage infrastructure that Amazon.com uses to run its global e-commerce network.
+
+
 
 ## *Credits*
 
@@ -141,9 +147,5 @@ All text information on the site is my own.
 All links to articles are taken from different media platforms.
 All images on the merchandise page are my own.
     
-#### Main images
-The main image/background image was taken by myself and is off 
-Croke Park Stadium in Dublin.
-
     
-© Darren McGill 2019
+© Darren McGill 2020
