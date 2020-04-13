@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4a936bc4-090b-409a-980c-8bbddf0092e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,7 @@
       <workItem from="1586281078545" duration="11532000" />
       <workItem from="1586336897664" duration="6669000" />
       <workItem from="1586353613853" duration="7520000" />
-      <workItem from="1586790649858" duration="78000" />
+      <workItem from="1586790649858" duration="1891000" />
     </task>
     <servers />
   </component>
