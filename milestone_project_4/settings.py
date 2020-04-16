@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'checkout',
     'cart',
+    'stripe',
     'storages'
 ]
 

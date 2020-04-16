@@ -139,6 +139,12 @@ caption p {
     word-wrap: break-word;
 }
 
+.alert-error{
+    color: white;
+    font-size: 20px;
+    background-color: #5a6268;;
+}
+
 /*--------------------------------------------Map*/
 
 div#map {
