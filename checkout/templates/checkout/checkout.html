@@ -4,7 +4,7 @@
 {% block content %}
     {% block head_js %}
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="">
+    <script type="text/javascript">
         //<![CDATA[
         Stripe.publishableKey = '{{ publishable }}';
         //]]>
@@ -39,7 +39,7 @@
             <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
                 <legend>Payment Details</legend>
 
-                <div id="credit-card-errors" style="display: none;">
+                <div id="credit-card-errors">
                     <div class="alert-message block-message error" id="stripe-error-message"></div>
                 </div>
 
