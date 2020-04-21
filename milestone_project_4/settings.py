@@ -37,7 +37,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['sportsblogproject4.herokuapp.com', "localhost", "127.0.0.1"]
 # ALLOWED_HOSTS = []
 # Application definition
-
+# Installed apps
 INSTALLED_APPS = [
     'crispy_forms',
     'django.contrib.admin',
