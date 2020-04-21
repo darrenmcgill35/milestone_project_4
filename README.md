@@ -1,6 +1,5 @@
 # **Full Stack Framework Milestone Project 4**
 
-[![Build Status](https://travis-ci.org/darrenmcgill35/milestone_project_4.svg?branch=master)](https://travis-ci.org/darrenmcgill35/milestone_project_4)
 
 The website can be found at: https://sportsblogproject4.herokuapp.com/
 The code can be found at: https://github.com/darrenmcgill35/milestone_project_4
